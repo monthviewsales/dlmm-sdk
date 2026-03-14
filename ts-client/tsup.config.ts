@@ -6,6 +6,7 @@ const config: Options = {
   splitting: true,
   sourcemap: true,
   minify: false,
+  keepNames: true,
   clean: true,
   skipNodeModulesBundle: true,
   dts: true,

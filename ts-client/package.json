@@ -27,7 +27,10 @@
     "start": "npm run build -- --watch",
     "test": "jest 'src/test/sdk_token2022.test.ts'",
     "test:all": "jest",
-    "unit-test": "jest src/test/calculate_distribution.test.ts",
+    "test:unit": "jest --config jest.unit.config.js --runInBand",
+    "test:package": "pnpm build && jest --config jest.package.config.js --runInBand",
+    "test:integration": "jest --config jest.integration.config.js --runInBand --forceExit",
+    "unit-test": "pnpm test:unit",
     "example": "dotenv -e .env npx ts-node src/examples/example.ts",
     "start-server": "npx tsc && node dist/src/server/index.js"
   },
