@@ -3,7 +3,7 @@ from solana.rpc.api import Client
 from solders.pubkey import Pubkey
 from dlmm.types import FeeInfo, GetBins, Position
 from solders.keypair import Keypair
-from solana.transaction import Transaction
+from solders.transaction import Transaction
 
 def test_util_methods():
     RPC = "https://api.devnet.solana.com"
@@ -52,7 +52,6 @@ def test_util_methods():
     all_positions = DLMM_CLIENT.get_all_lb_pair_positions_by_user(user.pubkey(), RPC)
 
     assert isinstance(all_positions, dict) and len(all_positions) > 0
-
 
 
 

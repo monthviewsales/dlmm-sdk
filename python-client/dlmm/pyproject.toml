@@ -7,13 +7,13 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-solders = "^0.21.0"
-solana = "^0.34.3"
-requests = "^2.32.3"
+solders = "^0.27.1"
+solana = "^0.36.11"
+requests = "^2.32.5"
 
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.2"
+pytest = "^8.4.2"
 
 [build-system]
 requires = ["poetry-core"]

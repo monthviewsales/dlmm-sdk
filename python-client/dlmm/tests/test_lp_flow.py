@@ -5,7 +5,7 @@ from dlmm.types import GetPositionByUser, StrategyType, SwapQuote
 from solders.keypair import Keypair
 from solders.pubkey import Pubkey
 from solana.rpc.api import Client
-from solana.transaction import Transaction
+from solders.transaction import Transaction
 
 def test_flow():
     RPC = "https://api.devnet.solana.com"

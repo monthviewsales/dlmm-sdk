@@ -1,8 +1,8 @@
 import json
 import requests
 from typing import Dict, List, Optional
-from solana.transaction import Transaction
 from solders.pubkey import Pubkey
+from solders.transaction import Transaction
 from .utils import convert_to_transaction
 from .types import ActivationType, ActiveBin, FeeInfo, GetBins, BinArray, Position, GetPositionByUser, Position, PositionInfo, StrategyParameters, SwapQuote, LBPair, TokenReserve, DlmmHttpError as HTTPError
 
