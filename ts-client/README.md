@@ -1,5 +1,9 @@
 # DLMM SDK
 
+This package lives in a community-maintained fork of Meteora's DLMM SDK.
+
+The code here tracks the TypeScript client surface for `@meteora-ag/dlmm`, but this repository is not an official Meteora release or support channel.
+
 <p align="center">
 <img align="center" src="https://app.meteora.ag/icons/logo.svg" width="180" height="180" />
 </p>

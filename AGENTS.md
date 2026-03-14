@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository is the VAULT77 fork of Meteora's DLMM SDK. It is not an official Meteora support or release channel.
+This repository is a community-maintained fork of Meteora's DLMM SDK. It is not an official Meteora support or release channel.
 
 Agents working in this repo should preserve that distinction in code, docs, and commit messages.
 
@@ -42,7 +42,7 @@ If a full verification pass is too expensive or blocked by environment limits, s
 
 ### Documentation
 
-- Root docs should clearly say this is the VAULT77 fork.
+- Root docs should clearly say this is a community fork, not an official Meteora support or release channel.
 - Capability claims should be backed by code or tests in this repo.
 - If a feature is partial, say that directly.
 - If a component is only a wrapper, say what it wraps.
@@ -79,6 +79,7 @@ cargo test -p commons
 cd ts-client
 anchor localnet -- --features localnet
 pnpm run test
+pnpm run test:all
 ```
 
 ### Build CLI
@@ -97,7 +98,7 @@ cargo build -p market_making
 
 Before finishing, check:
 
-- Is the change consistent with the VAULT77 fork identity?
+- Is the change consistent with the repo's community-fork identity?
 - Are README and code comments still accurate?
 - Were relevant tests or checks run?
 - Does the diff introduce API drift, broken imports, or unsupported claims?
